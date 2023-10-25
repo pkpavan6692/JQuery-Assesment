@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .slider {
+            max-width: 100%;
+            overflow: hidden;
+        }
+
+        #slider-image {
+            width: 50%;
+            border: 10px solid black;
+            margin-top: 50px;
+            margin-left: 25%;
+            height: auto;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 80px;
+            background-color: transparent;
+            border-color: transparent;
+        }
+        button:hover{
+            color: white; 
+       }
+        #prevBtn{
+            position: absolute;
+            left: 25%;
+            top: 30%;
+        }
+        #nextBtn{
+            position: absolute;
+            right: 25%;
+            top: 30%;
+        }
+        .dot {
+            height: 20px;
+            width: 20px;
+            margin:  2px;
+            background-color: transparent;
+            border-color: #c03d3d;
+            border-width: 5 px;
+            border-style: solid;
+            border-radius: 50%;
+            display: inline-block;
+        }
+        @media screen and (max-width:480px) {
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            .slider{
+                max-width: 100%;
+                overflow: hidden;
+            }
+            button {
+                padding: 10px 20px;
+                font-size: 30px;
+                font-weight: bold;
+                background-color: transparent;
+                border-color: transparent;
+            }
+            #prevBtn{
+                position: absolute;
+                left: 23%;
+                top: 18%;
+            }
+            #nextBtn{
+                position: absolute;
+                right: 23%;
+                top: 18%;
+            }
+        }
+        @media (min-width:481px) and (max-width:768px) {
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            .slider{
+                max-width: 100%;
+                overflow: hidden;
+            }
+            button {
+                padding: 10px 20px;
+                font-size: 45px;
+                font-weight: bold;
+                background-color: transparent;
+                border-color: transparent;
+            }
+            #prevBtn{
+                position: absolute;
+                left: 24%;
+                top: 25%;
+            }
+            #nextBtn{
+                position: absolute;
+                right: 25%;
+                top: 25%
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="slider">
+        <img id="slider-image" src="" alt="Slider Image">
+    </div>
+    <button id="prevBtn"> < </button>
+    <button id="nextBtn"> > </button>
+    <br />
+ 
+    <div style="text-align: center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+    <script src="slider.js"></script>
+</body>
+</html>
